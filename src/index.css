@@ -1,0 +1,50 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #080808;
+  color: #111111;
+  font-family: 'Inter', sans-serif;
+}
+
+.font-display {
+  font-family: 'Anton', sans-serif;
+}
+
+.hero-title {
+  font-family: 'Anton', sans-serif;
+  font-size: clamp(55px, 9vw, 130px);
+  line-height: 0.88;
+  letter-spacing: -0.045em;
+  font-weight: 400;
+}
+
+/* Mobile responsive */
+@media (max-width: 767px) {
+  .hero {
+    min-height: 720px;
+    height: calc(100svh - 16px);
+  }
+
+  .hero-title {
+    font-size: clamp(58px, 16vw, 100px);
+    line-height: 0.86;
+  }
+}
+
+::selection {
+  background: #111111;
+  color: white;
+}
